@@ -1,0 +1,293 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url('https://fonts.googleapis.com/css2?family=Open%20Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	color: #2f302c;
+}
+
+.header__top {
+	padding: 30px 0;
+	text-align: center;
+	font-size: 86px;
+	font-weight: 700;
+	background: radial-gradient(circle, rgba(155, 42, 153, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+	background-clip: text;
+	color: transparent;
+}
+
+.header__content {
+	max-width: 1920px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.content-header {
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 114px 0 110px;
+}
+
+.content-header__container {
+	max-width: 1390px;
+	margin: 0 auto;
+}
+
+.content-header__block {
+	max-width: 643px;
+	width: 100%;
+	margin-left: auto;
+}
+
+.content-header__content>* {
+	margin-bottom: 20px;
+}
+
+.content-header__subtitle {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.4;
+}
+
+.content-header__title {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 800;
+	font-size: 96px;
+	line-height: 1.04;
+	text-transform: uppercase;
+	margin-bottom: 36px;
+}
+
+.content-header__title::after {
+	content: '';
+	display: block;
+	width: 48%;
+	height: 1px;
+	margin-top: 16px;
+	background-color: #2f302c;
+	left: 0;
+}
+
+.content-header__subject {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 140%;
+	text-transform: uppercase;
+}
+
+.content-header__text {
+	font-weight: 500;
+	font-size: 16px;
+	max-width: 400px;
+	line-height: 125%;
+	margin-bottom: 0;
+	color: #7e7f7c;
+}
+
+
+.ready {
+	font-family: "Open Sans", sans-serif;
+	background-color: #252B42;
+	min-height: 654px;
+	color: #fff;
+}
+
+.ready__container {
+	max-width: 1070px;
+	width: 100%;
+	margin: 0 auto;
+
+}
+
+.ready__block {
+	padding-top: 110px;
+	text-align: center;
+}
+
+.ready__title {
+	font-weight: 800;
+	font-size: 48px;
+	line-height: 125%;
+	letter-spacing: 0em;
+	text-align: center;
+	margin-bottom: 25px;
+	color: #fff;
+}
+
+
+.ready__text {
+	max-width: 510px;
+	margin: 0 auto;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.43;
+	letter-spacing: 0.01em;
+	text-align: center;
+	color: #fff;
+}
+
+.price {
+	height: 700px;
+}
+
+.price__container {
+	margin: -320px auto 0;
+	max-width: 1070px;
+	width: 100%;
+}
+
+.price__items {
+	margin: 0 -4px;
+	font-size: 0;
+}
+
+.price__item {
+	width: 33.333%;
+	padding: 0 4px;
+}
+
+
+
+.price-card {
+	display: inline-block;
+}
+
+.price-card__box {
+	box-shadow: 0 13px 19px 0 rgba(0, 0, 0, 0.07);
+	border-radius: 8px;
+	padding: 40px;
+	background-color: #fff;
+	transition: all 0.3s ease;
+}
+
+.price-card__box:hover {
+	background-color: #e1f4ff;
+	padding: 58px 40px;
+	transform: translateY(20px);
+}
+
+/* так і не зміг розібратися щоб при ховері всі карти не зміщувалися в низ. Просто зробити середнім просто за допомогою класу модифікатора, або звернутися до другого елементу. Підкажіть що я робив не так? Дякую за допомогу */
+
+.price-card:hover .price-card__btn {
+	background-color: #31a0fe;
+	border: 1px solid transparent;
+	color: #fff;
+}
+
+
+.price-card__title {
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.5;
+	letter-spacing: 0.01em;
+	text-transform: capitalize;
+	color: #252b42;
+	margin-bottom: 17px;
+}
+
+.price-card__inner {
+	margin-bottom: 17px;
+}
+
+.price-card__inner::after {
+	content: '';
+	display: block;
+	width: 47px;
+	height: 4px;
+	background-color: #31a0fe;
+	margin-top: 17px;
+}
+
+.price-card__pay {
+	font-family: "Open Sans", sans-serif;
+	display: inline-block;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 1.42;
+	letter-spacing: 0.01em;
+	margin-right: 15px;
+	color: #252b42;
+	width: 70px;
+}
+
+.price-card__validity {
+	display: inline-block;
+	width: 185px;
+}
+
+.price-card__caption {
+	text-transform: capitalize;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.6;
+	letter-spacing: 0.2px;
+	color: #252b42;
+}
+
+.price-card__sale {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 133%;
+	letter-spacing: 0.2px;
+	color: #737373;
+}
+
+.price-card__text {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.2px;
+	margin-bottom: 32px;
+	color: #737373;
+}
+
+.price-card__list {
+	margin-bottom: 42px;
+}
+
+.price-card__item {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1.7;
+	height: 32px;
+	color: #252b42;
+	background-image: url('../img/check_active.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding-left: 42px;
+	letter-spacing: 0.4px;
+}
+
+.price-card__item:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.price-card__item.no-active {
+	background-image: url('../img/check_noactive.png');
+}
+
+.price-card__btn {
+	border: 1px solid #252b42;
+	text-align: center;
+	border-radius: 24px;
+	padding: 6px 24px;
+	width: 271px;
+	height: 40px;
+	font-family: "Montserrat", sans-serif;
+	text-transform: capitalize;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 2;
+	letter-spacing: 0.1px;
+	color: #252b42;
+}
